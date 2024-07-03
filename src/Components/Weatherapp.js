@@ -47,7 +47,7 @@ const [weatherdata,setWeaherdata]=useState(false)
   return (
 
 
-    <div className='container min-h-[80vh] flex justify-center items-center '>
+    <div className='container mt-10 min-h-[80vh] flex justify-center items-center '>
 
     <div className='bg-image h-[500px] w-[450px] rounded-lg ' >
 
@@ -66,7 +66,7 @@ const [weatherdata,setWeaherdata]=useState(false)
       <div className="weather-data flex justify-around">
 
         <div className='col  '>
-        <i className=" text-4xl mb-2 text-white fa-solid fa-smog"></i>
+        <i className=" text-4xl mb-2 text-slate-600 fa-solid fa-smog"></i>
         <div>
           <p className='text-3xl'>{weatherdata.humidity}%</p>
           <span className='text-xl'>Humidity</span>
@@ -74,17 +74,18 @@ const [weatherdata,setWeaherdata]=useState(false)
 
         </div>
         <div className='col'>
-        <i className="  text-4xl mb-2 text-white fa-solid fa-wind"></i>
+        <i className="  text-4xl mb-2 ml-10  text-slate-600 fa-solid fa-wind"></i>
         <div>
-          <p className='text-3xl' >{weatherdata.windspeed} km/h</p>
-          <span className='text-xl'>wind</span>
+          <p className='text-3xl'  >{weatherdata.windspeed} km/h</p>
+          <span className='text-xl ml-14 '>wind</span>
         </div>
 
         </div>
-
+     
       </div>
-      
+{/*  */}
     </div>
+    
 
     </div>
   )

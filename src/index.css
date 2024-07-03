@@ -5,6 +5,16 @@
 .bg-image{
     background-image: url('https://img.freepik.com/premium-photo/light-sky-blue-gradation_1022559-334.jpg');
     background-size: cover;
-    
+    background-position: 0% 0%;
+  animation: move-background 30s infinite linear;
 }
 
+
+@keyframes move-background {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
